@@ -1,0 +1,9 @@
+.idea
+
+.terraform/
+.terraform.*
+*.tfstate
+*.tfstate.*
+
+auth.json
+
