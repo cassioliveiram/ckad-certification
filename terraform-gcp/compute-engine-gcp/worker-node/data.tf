@@ -6,3 +6,10 @@ data "google_compute_subnetwork" "ckad-labs-subnetwork" {
 data "google_service_account" "svc_terraform" {
   account_id = "terraform"
 }
+
+data "template_file" "script-worker" {
+  template = file("../../../LFD259/SOLUTIONS/s_02/k8sSecond.sh")
+//  vars = {
+//    kubemasterip =
+//  }
+}

@@ -13,3 +13,7 @@ resource "google_compute_project_metadata" "ssh_key_ckad_labs" {
     EOF
   }
 }
+
+output "ssh_key_id" {
+  value = google_compute_project_metadata.ssh_key_ckad_labs.id
+}
